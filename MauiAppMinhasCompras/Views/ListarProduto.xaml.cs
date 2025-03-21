@@ -83,6 +83,7 @@ public partial class ListarProduto : ContentPage
     {
         try
         {
+			lista.Clear();
 			Produto p = e.SelectedItem as Produto;
 			Navigation.PushAsync(new Views.EditarProduto
 			{
